@@ -1,0 +1,3 @@
+This project has a objective to learn a bit HTML tags
+
+used tags: img, body, a and other...
