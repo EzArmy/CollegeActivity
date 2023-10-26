@@ -1,0 +1,129 @@
+@keyframes Moving {
+    0%{
+        bottom: 0px;
+    }
+
+    10%{
+        left: 50%;
+        bottom: 700px;
+    }
+
+    20%{
+        bottom: 700px;
+        left: 885px;
+    }
+    
+    30%{
+        bottom: 700px;
+        left: 885px;
+    }
+
+    40%{
+        bottom: 595px;
+        left: 885px;
+    }
+
+    50%{
+        bottom: 595px;
+        left: 800px;
+    }
+
+    60%{
+        bottom: 350px;
+        left: 800px;
+    }
+    70%{
+        bottom: 350px;
+        left: 800px;
+    }
+    80%{
+        
+    }
+
+    
+
+
+}
+
+ @keyframes WalkingUp {
+   100%{
+        background-position: -288px;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.map {
+    background-image: url(../imgs/map/HyruleMap.gif);
+    width: 1008px;
+    height: 961px;
+    transform: scale(0.8);
+    z-index: 0;
+}
+
+.gate{
+    background-image: url(../imgs/mapAssets/gateAsset.gif);
+    width: 138px;
+    height: 67px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 640px;
+    left: 435px;
+}
+
+.bridge{
+    background-image: url(../imgs/mapAssets/bridgeAsset.gif);
+    width: 146px;
+    height: 59px;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 62px;
+    left: 429px;
+}
+
+.wood{
+    background-image: url(../imgs/mapAssets/woodAsset.gif);
+    width: 146px;
+    height: 59px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 215px;
+    left: 439px;
+}
+
+.box {
+    animation: Moving 15s infinite;
+    border: 1px solid black;
+    width: 17px;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.Link{
+    animation: WalkingUp 1s steps(9) infinite;
+    background-image: url(../imgs/chars/link/linkWalkingUp.png);
+    position: relative;
+    transform: scale(1);
+    width: 17px;
+    height: 26px;   
+    background-repeat: no-repeat;
+}
