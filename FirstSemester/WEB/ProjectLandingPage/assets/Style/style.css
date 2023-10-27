@@ -5,8 +5,12 @@
     --menuItemSize: 22px;
     --menuItemWeight: 600;
 
-    --titleSize:25px;
+    --titleSize: 75px;
     --txtSize: 18px;
+
+    --titleWeight: 600;
+    --tilteLetterSpacing: 1;
+    --titleMargin: 3px;
 }
 
 @font-face {
@@ -17,6 +21,14 @@
 *{
     padding: 0 !important;
     margin: 0 !important;
+}
+
+p{
+    padding: 3px !important;
+}
+
+section{
+    padding: 5px;
 }
 
 .menu-container{
@@ -100,17 +112,30 @@
 
 .content-img{
     background-image: url(../img/content-imgs/cam.jpg);
-    background-color: red;
     background-size: cover;
-    background-position: right 55% top 55%;
-    width: 500px;
-    height: 500px;
+    background-repeat: no-repeat;
+    background-position: left 37% top 45%;    
+    width: 100%;
+    height: auto;
 }
 
 .title{
         font-size: var(--titleSize);
+        font-weight: var(--titleWeight);
+        font-family: sansation;
+        text-align: center;
+}
+
+.subTitle{
+    font-size: var(--menuItemSize);
+    font-weight: var(--menuItemWeight);
+    text-align: center;
+
+    font-family: sansation;
 }
 
 .content-txt{
+    padding: 0px 50px !important;
     font-size: var(--txtSize);
+    text-align: justify;
 }
