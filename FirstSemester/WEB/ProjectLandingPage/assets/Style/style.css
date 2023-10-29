@@ -1,141 +1,47 @@
-:root{
-    --mainColor: #608F88;
-    
-    --WhiteText: #ffff;
-    --menuItemSize: 22px;
-    --menuItemWeight: 600;
-
-    --titleSize: 75px;
-    --txtSize: 18px;
-
-    --titleWeight: 600;
-    --tilteLetterSpacing: 1;
-    --titleMargin: 3px;
-}
-
-@font-face {
-    font-family: Sansation;
-    src: url(../fonts/sansation/Sansation_Regular.ttf);
-}
-
 *{
+    padding: 0;
+    margin: 0;
+}
+
+.no-padding {
     padding: 0 !important;
-    margin: 0 !important;
 }
 
-p{
-    padding: 3px !important;
-}
-
-section{
-    padding: 5px;
-}
-
-.menu-container{
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 15px;
-    border-bottom: 5px solid white; */
-
-    position: absolute;
-    z-index: 1;
-}
-
-.menu-items-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
-}
-
-.menu-items{
-    color: var(--WhiteText);
-    font-weight: var(--menuItemWeight);
-    font-size: var(--menuItemSize);
-    text-decoration: none;
-}
-
-.customButton{
-    background-color: var(--mainColor);
-    width:200px;
-    font-weight: var(--menuItemWeight);
-    font-size: var(--menuItemSize);
-    color: var(--WhiteText);
-}
-
-.btn:hover{
-    background-color: var(--WhiteText);
-    outline: var(--mainColor) 2 px solid !important;
-    color: var(--mainColor);
-    border: none;
-}
-
-.banner{
+.banner {
     background-image: url(../img/banner/banner2.png);
-    background-repeat: no-repeat;
-    background-position: right 45% top 55%;
-    transform: scale(1);
-    padding: 25px;
-    display: flex;
-    z-index: 0;
-    width: 100%;
-    height: 90vh;
-
-    align-items: center;
-}
-
-
-
-.bannerTitle{
-    text-align: start;
-
-    color: var(--WhiteText);
-    font-size: 5vw;
-    font-family: Sansation;
-}
-
-.btn{
-    width: 50px !important;
-    height: 80px !important;
-    border-radius: 25px;
-    background-color: var(--mainColor);
-}
-
-.btn:hover{
-    background-color: var(--WhiteText); 
-    color: var(--mainColor) !important;
-}
-
-/* second section */
-
-.content-img{
-    background-image: url(../img/content-imgs/cam.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 37% top 45%;    
+    background-position: center center;
+    height: 100vh;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1000;
+    background-color: transparent;
+    border-bottom: 3px solid #fff;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+.square-container {
+    position: relative;
     width: 100%;
-    height: auto;
+    padding-bottom: 100%; /* Esta proporção mantém a div quadrada (1:1) */
+    overflow: hidden;
 }
 
-.title{
-        font-size: var(--titleSize);
-        font-weight: var(--titleWeight);
-        font-family: sansation;
-        text-align: center;
-}
-
-.subTitle{
-    font-size: var(--menuItemSize);
-    font-weight: var(--menuItemWeight);
-    text-align: center;
-
-    font-family: sansation;
-}
-
-.content-txt{
-    padding: 0px 50px !important;
-    font-size: var(--txtSize);
-    text-align: justify;
+.square-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
 }

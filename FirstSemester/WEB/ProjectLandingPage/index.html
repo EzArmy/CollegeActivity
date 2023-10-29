@@ -4,157 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap assets -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <script src="./assets/js/bootstrap.js"></script>
 
     <!-- My assets -->
     <link rel="stylesheet" href="assets/Style/style.css">
 
+    <!-- Bootstrap assets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title>CUSTODIRE</title>
 </head>
 
-<body class="container-fluid">
+<body class="p-0">
 
-    <div class="row">
-        <nav class="container-fluid row menu-container px-4">
-            <div class="col-3">
-                <a href="#">
-                    <img src="./assets/img/logo/LogoHorizontal.svg" alt="">
-                </a>
-            </div>
-    
-            <div class="col-6 row justify-content-around align-items-center">
-                <a href="" class="col-1 text-light text-decoration-none fw-bold text-center">OPÇÃO 1</a>
-                <a href="" class="col-1 text-light text-decoration-none fw-bold text-center">OPÇÃO 2</a>
-                <a href="" class="col-1 text-light text-decoration-none fw-bold text-center">OPÇÃO 3</a>
-                <a href="" class="col-1 text-light text-decoration-none fw-bold text-center">OPÇÃO 4</a>
-            </div>
-    
-            <div class="col-3 row px-5 py-3 justify-content-center">
-                <button class="col text-light fw-bold fs-5 btn btn-secondary">CADASTRAR-SE</button>
-            </div>
-        </nav>
-    </div>
-    
-    <!--  -->
-    <div class="row">
-        <section>
-            <div class="banner px-4">
-                <div>
-                    <p class="bannerTitle">CUSTODIRE</p>
+    <div class="container-fluid no-padding">
+
+        <!-- BANNER + NAVBAR -->
+        <div class="banner">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto mx-auto"> <!-- Adicionando a classe mx-auto para centralizar -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cadastre-se</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- PRIMEIRA SEÇÃO -->
+        <div class="row mt-5">
+            <!-- Coluna da Esquerda (Imagem) -->
+            <div class="col-md-6">
+                <img src="caminho/para/sua/imagem.jpg" class="img-fluid" alt="Imagem">
             </div>
-        </section>
+
+            <!-- Coluna da Direita (Texto) -->
+            <div class="col-md-6">
+                <h2>Custodire</h2>
+                <h4 class="text-muted">De olho em sua segurança</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut semper justo. Quisque et urna non ante euismod consectetur. Proin in quam in odio malesuada consequat a ut arcu. Quisque vulputate, mauris ut vestibulum cursus, ex mi suscipit massa, et sagittis justo libero eu odio. Vestibulum cursus auctor dolor, eu tristique velit tempor at.</p>
+            </div>
+        </div>
+
+        <!-- SEGUNDA SEÇÃO -->
+        <div class="row mt-5">
+            <!-- Coluna da Esquerda (Texto) -->
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut semper justo. Quisque et urna non ante euismod consectetur. Proin in quam in odio malesuada consequat a ut arcu. Quisque vulputate, mauris ut vestibulum cursus, ex mi suscipit massa, et sagittis justo libero eu odio. Vestibulum cursus auctor dolor, eu tristique velit tempor at.</p>
+            </div>
+
+            <!-- Coluna da Direita (Imagem) -->
+            <div class="col-md-6">
+                <img src="caminho/para/sua/imagem2.jpg" class="img-fluid" alt="Imagem 2">
+            </div>
+        </div>
+
     </div>
-
-    <!-- txt and img -->
-    <div class="row my-3">
-        <section class="row px-3">
-            <!-- img -->
-            <div class="col p-5 content-img rounded-4">
-            </div>
-    
-            <!-- tilte + txt -->
-            <div class="col">
-    
-                <!-- title -->
-                <div class="row">
-                    <div class="col">
-                        <p class="title">
-                           CUSTODIRE
-                        </p>
-    
-                        <p class="subTitle">
-                            de olho na sua segurança
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- txt -->
-                <div class="row">
-                    <div class="col">
-                        <p class="content-txt">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id possimus laudantium?
-                            Perspiciatis
-                            quos culpa vitae, consectetur nam repellat similique. Ipsa harum ut nostrum laborum fuga quia
-                            vitae
-                            voluptate veritatis!
-                            Tempore nihil maxime voluptate commodi modi minus corporis voluptatibus obcaecati corrupti natus
-                            ipsum,
-                            amet quaerat ea, qui accusamus ratione repellendus numquam, nobis asperiores fuga? Debitis,
-                            fugit iure!
-                            Recusandae, dolores labore.
-                            Reiciendis voluptates, sunt provident velit voluptate veniam doloremque beatae explicabo
-                            nesciunt, quia
-                            culpa aspernatur debitis odit odio ratione repellendus! Ea, blanditiis? Non quia nobis rem, quas
-                            odit
-                            aspernatur modi esse.
-                            A asperiores provident in impedit cum rem reiciendis quisquam expedita itaque. Quaerat eius,
-                            consequuntur repellat ipsam aut quo eveniet autem dicta delectus laborum, quam aperiam non
-                            voluptatem
-                            assumenda perspiciatis modi?
-                            Autem numquam harum, doloremque soluta quaerat laborum asperiores molestias eveniet dicta rem
-                            odit
-                            obcaecati odio, natus voluptas accusamus sapiente consequatur minus dolorum incidunt? Asperiores
-                            exercitationem unde voluptates cupiditate officiis doloremque.
-                            Commodi placeat non voluptatibus consectetur suscipit explicabo quidem similique, aspernatur
-                            repellat
-                            fugiat pariatur molestias laborum. Nesciunt voluptates doloribus nisi quam autem, magni, ab
-                            soluta,
-                            dicta temporibus perferendis est corrupti similique!
-                            Repudiandae tenetur reiciendis delectus quasi possimus quidem, recusandae eius laudantium ipsa
-                            libero
-                            repellat, quae iure perspiciatis labore? Beatae reprehenderit iusto iure fugit. Quas nihil
-                            deleniti
-                            soluta corporis unde ut quod!
-                            Ipsum consectetur sequi culpa magni praesentium blanditiis, id atque dicta quisquam cumque,
-                            delectus
-                            voluptate deleniti tenetur soluta porro asperiores iure repellat, qui provident nesciunt eum
-                            odit ea
-                            ipsa. Rerum, unde.
-                            Architecto veniam expedita nihil magnam quisquam modi. Cumque quae tempora quam ducimus quidem
-                            sapiente
-                            dolorem, fuga doloribus vitae? Aliquam deserunt nesciunt rem perferendis aspernatur ea molestias
-                            totam
-                            temporibus omnis aperiam!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-    <!-- members -->
-    <div class="row">
-        <section>
-            <div class="row">
-                <p class="col">MEMBROS</p>
-            </div>
-
-            <div class="row">
-                <div class="col">
-
-                    <!-- photo -->
-                    <div class="row">
-                        <div class="avatar-photo"></div>
-                    </div>
-
-                    <!-- name -->
-                    <div class="row">
-                        <div class="avatar-name"></div>
-                    </div>
-
-                    <!-- job -->
-                    <div class="row">
-                        <div class="avatar-job"></div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-    </div>
-
 </body>
 
 </html>
+    
