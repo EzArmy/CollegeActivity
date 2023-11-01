@@ -43,5 +43,30 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mantém a proporção da imagem */
+    object-fit: cover; 
+}
+
+.custom-img {
+    max-width: 100%;
+    height: auto; 
+    max-height: 300px;
+}
+
+.custom-content-img img {
+    border-radius: 10px;
+}
+
+.custom-card h5 {
+    color: #ffff;
+    margin: 10px 0px;
+}
+
+.custom-card p {
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.vant-img {
+    width: auto !important;
+    height: 150px !important;
 }
