@@ -7,6 +7,11 @@
     padding: 0 !important;
 }
 
+@font-face {
+    font-family: Sansation;
+    src: url(../fonts/sansation/Sansation_Regular.ttf);
+}
+
 .banner {
     background-image: url(../img/banner/banner2.png);
     background-size: cover;
@@ -75,9 +80,32 @@ body {
     border: 0px solid transparent;
 }
 
+.CUSTODIRE{
+    vertical-align: baseline;
+    font-size: 75px;
+    font-family: Sansation;
+    color: white;
+}
+
+.custom-size{
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+.cad-btn{
+    width: 150px;
+    border-radius: 5px;
+    background-color: #608F88;
+}
+
+.cad-btn li a{
+    color: white !important;
+}
+
 @media (max-width: 576px) {
-    body{
-        background-color: red;
+    .logo{
+        width: 150px;
     }
 
     .custom-img {
@@ -85,28 +113,56 @@ body {
         height: auto; 
         max-height: 250px;
     }
+
+    .dontShow{
+        display: none;
+    }
 }
 
 @media (min-width: 768px){
-    body{
-        background-color: green;
+    .logo{
+        width: 250px;
+    }
+
+    .dontShow{
+        display: none;
+    }
+
+    .Show{
+        display: block;
     }
 }
 
 @media (min-width: 992px){
-    body{
-        background-color: blue;
+    .dontShow{
+        display: none;
+    }
+
+    .Show{
+        display: block;
+    }
+
+    .logo{
+        width: 350px;
     }
 }
 
 @media (min-width: 1200px){
-    body{
-        background-color: purple;
+    .dontShow{
+        display: none;
+    }
+
+    .Show{
+        display: block;
     }
 }
 
 @media (min-width: 1400px){
-    body{
-        background-color: yellow;
+    .dontShow{
+        display: none;
+    }
+
+    .Show{
+        display: block;
     }
 }
