@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .no-padding {
     padding: 0 !important;
 }
