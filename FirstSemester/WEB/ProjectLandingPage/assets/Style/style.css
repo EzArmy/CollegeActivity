@@ -12,6 +12,61 @@ body{
     --vigillatus-blue: #4A7296;
 }
 
+/* Testing corousel */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-content {
+    padding: 20px 10px;
+    display: flex;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+.carousel-content.active {
+    display: flex;
+    animation-name: slideIn;
+}
+
+.carousel-content.inactive {
+    display: none;
+    animation-name: slideOut;
+}
+
+.carousel-wrapper {
+    max-width: 800px; /* Defina a largura máxima desejada para o carrossel */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+ .carousel-font{
+    color: white;
+    font-size: 17px;
+    font-weight: 650;
+}
+
+/* Testing corousel */
+
 .no-padding {
     padding: 0 !important;
 }
@@ -109,7 +164,7 @@ body {
     vertical-align: baseline;
     font-size: 75px;
     font-family: Timmana;
-    color: black;
+    color: white;
 }
 
 .custom-size{
@@ -150,6 +205,9 @@ body {
     font-weight: 650;
 }
 
+.bg-darkBlue{
+    background-color:var(--vigillatus-black) !important;
+}
 
 /* Responsivity */
 @media screen and (max-width: 576px) {
@@ -194,13 +252,10 @@ body {
     .logo{
         width: 350px;
     }
-    .custom-font{
-        font-size: 18px;
-    }
     .custom-img {
         max-width: 100%;
         height: auto; 
-        max-height: 550px;
+        max-height: 350px;
     }
 }
 
