@@ -3,41 +3,70 @@
         bottom: 0px;
     }
 
-    10%{
+    15%{
         left: 50%;
         bottom: 700px;
     }
 
-    20%{
-        bottom: 700px;
-        left: 885px;
-    }
-    
     30%{
         bottom: 700px;
         left: 885px;
     }
+    
+    45%{
+        bottom: 700px;
+        left: 885px;
+    }
 
-    40%{
+    55%{
         bottom: 595px;
         left: 885px;
     }
 
-    50%{
+    65%{
         bottom: 595px;
         left: 800px;
     }
 
-    60%{
+    80%{
         bottom: 350px;
         left: 800px;
+    }
+    95%{
+        bottom: 350px;
+        left: 800px;
+    }
+    105%{
+        bottom: 350px;
+        left:720px;
+    }
+    45%{
+        bottom: 315px;
+        left:720px;
+    }
+    50%{
+        bottom: 315px;
+        left:700px;
+    }
+    55%{
+        bottom: 300px;
+        left:700px;
+    }
+    60%{
+        bottom: 300px;
+        left:670px;
+    }
+    65%{
+        bottom: 160px;
+        left:670px;
     }
     70%{
-        bottom: 350px;
-        left: 800px;
+        bottom: 160px;
+        left:50%;
     }
-    80%{
-        
+
+    75%{
+        bottom: 0px;
     }
 
     
