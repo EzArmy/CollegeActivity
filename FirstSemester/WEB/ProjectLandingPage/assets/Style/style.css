@@ -55,8 +55,8 @@ body{
 }
 
 .carousel-wrapper {
-    max-width: 800px; /* Defina a largura máxima desejada para o carrossel */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
  .carousel-font{
@@ -207,6 +207,12 @@ body {
 
 .bg-darkBlue{
     background-color:var(--vigillatus-black) !important;
+}
+
+.footer_logo{
+    margin: 10px;
+    width: auto;
+    height: 50px;
 }
 
 /* Responsivity */
