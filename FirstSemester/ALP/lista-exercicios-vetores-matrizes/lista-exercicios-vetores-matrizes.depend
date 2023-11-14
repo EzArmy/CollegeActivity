@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1699923943 source:c:\users\dsm1\downloads\portablegit\fatec\collegeactivity\firstsemester\alp\lista-exercicios-vetores-matrizes\main.c
+	<stdio.h>
+	<stdlib.h>
+
